@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XSPACE</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loader">
+        <div class="loader-grid">
+            <div class="loader-cell"></div>
+            <div class="loader-cell"></div>
+            <div class="loader-cell"></div>
+            <div class="loader-cell"></div>
+            <div class="loader-cell"></div>
+            <div class="loader-cell"></div>
+            <div class="loader-cell"></div>
+            <div class="loader-cell"></div>
+            <div class="loader-cell"></div>
+        </div>
+        <div class="loader-text">INITIALIZING</div>
+    </div>
+
+    <!-- Canvas Background -->
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav id="main-nav">
+        <div class="nav-inner">
+            <a href="#home" class="logo">
+                <span class="logo-bracket">[</span>
+                <span class="logo-text">XSPACE</span>
+                <span class="logo-bracket">]</span>
+            </a>
+            <div class="nav-links">
+                <a href="#home" class="nav-link active" data-section="home">
+                    <span class="nav-num">01</span>
+                    <span class="nav-label">HOME</span>
+                </a>
+                <a href="#thoughts" class="nav-link" data-section="thoughts">
+                    <span class="nav-num">02</span>
+                    <span class="nav-label">THOUGHTS</span>
+                </a>
+                <a href="#notes" class="nav-link" data-section="notes">
+                    <span class="nav-num">03</span>
+                    <span class="nav-label">NOTES</span>
+                </a>
+                <a href="#about" class="nav-link" data-section="about">
+                    <span class="nav-num">04</span>
+                    <span class="nav-label">ABOUT</span>
+                </a>
+            </div>
+            <button class="menu-toggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Decorative Lines -->
+    <div class="deco-lines">
+        <div class="deco-line v1"></div>
+        <div class="deco-line v2"></div>
+        <div class="deco-line v3"></div>
+        <div class="deco-line h1"></div>
+        <div class="deco-line h2"></div>
+    </div>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- HOME SECTION -->
+        <section id="home" class="section active">
+            <div class="hero">
+                <div class="hero-grid-bg"></div>
+                <div class="hero-content">
+                    <div class="hero-tag">
+                        <span class="tag-line"></span>
+                        <span class="tag-text">PERSONAL SPACE</span>
+                    </div>
+                    <h1 class="hero-title">
+                        <span class="title-line" data-delay="0">
+                            <span class="char">T</span><span class="char">H</span><span class="char">I</span><span class="char">N</span><span class="char">K</span>
+                        </span>
+                        <span class="title-line accent" data-delay="1">
+                            <span class="char">R</span><span class="char">E</span><span class="char">C</span><span class="char">O</span><span class="char">R</span><span class="char">D</span>
+                        </span>
+                        <span class="title-line" data-delay="2">
+                            <span class="char">G</span><span class="char">R</span><span class="char">O</span><span class="char">W</span>
+                        </span>
+                    </h1>
+                    <p class="hero-desc">
+                        My personal space for thoughts, notes, and everything in between.
+                    </p>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-num" id="stat-essays">0</span>
+                            <span class="stat-label">THOUGHTS</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-item">
+                            <span class="stat-num" id="stat-notes">0</span>
+                            <span class="stat-label">NOTES</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-item">
+                            <span class="stat-num" id="stat-days">0</span>
+                            <span class="stat-label">DAYS</span>
+                        </div>
+                    </div>
+                    <div class="hero-cta">
+                        <a href="#thoughts" class="btn-primary">
+                            <span>START READING</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                        <a href="#about" class="btn-ghost">LEARN MORE</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="geo-circle"></div>
+                    <div class="geo-square"></div>
+                    <div class="geo-triangle"></div>
+                    <div class="floating-text">THINK</div>
+                    <div class="floating-text-2">RECORD</div>
+                </div>
+            </div>
+
+            <div class="recent-section">
+                <div class="section-header">
+                    <span class="section-num">/ 01</span>
+                    <h2 class="section-title">RECENT</h2>
+                </div>
+                <div class="recent-grid" id="recent-grid">
+                    <!-- JS populated -->
+                </div>
+            </div>
+        </section>
+
+        <!-- THOUGHTS SECTION -->
+        <section id="thoughts" class="section">
+            <div class="page-header">
+                <span class="page-num">02</span>
+                <h1 class="page-title">
+                    <span class="title-en">THOUGHTS</span>
+                </h1>
+                <p class="page-desc">Long-form reflections on tech, design, and life.</p>
+            </div>
+
+            <div class="filter-bar">
+                <button class="filter-btn active" data-filter="all">ALL</button>
+                <button class="filter-btn" data-filter="tech">TECH</button>
+                <button class="filter-btn" data-filter="design">DESIGN</button>
+                <button class="filter-btn" data-filter="life">LIFE</button>
+                <button class="filter-btn" data-filter="reading">READING</button>
+            </div>
+
+            <div class="content-list" id="thoughts-list">
+                <!-- JS populated -->
+            </div>
+        </section>
+
+        <!-- NOTES SECTION -->
+        <section id="notes" class="section">
+            <div class="page-header">
+                <span class="page-num">03</span>
+                <h1 class="page-title">
+                    <span class="title-en">NOTES</span>
+                </h1>
+                <p class="page-desc">Quick learnings and knowledge snippets.</p>
+            </div>
+
+            <div class="filter-bar">
+                <button class="filter-btn active" data-filter="all">ALL</button>
+                <button class="filter-btn" data-filter="frontend">FRONTEND</button>
+                <button class="filter-btn" data-filter="backend">BACKEND</button>
+                <button class="filter-btn" data-filter="algorithm">ALGORITHM</button>
+                <button class="filter-btn" data-filter="tool">TOOLS</button>
+            </div>
+
+            <div class="notes-grid" id="notes-grid">
+                <!-- JS populated -->
+            </div>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section id="about" class="section">
+            <div class="about-minimal">
+                <h1 class="about-title-single">ABOUT ME</h1>
+            </div>
+        </section>
+
+        <!-- ARTICLE DETAIL (Overlay) -->
+        <div id="article-overlay" class="article-overlay">
+            <div class="article-backdrop"></div>
+            <div class="article-container">
+                <button class="article-close" aria-label="Close">
+                    <span></span>
+                    <span></span>
+                </button>
+                <article class="article-content" id="article-content">
+                    <!-- JS populated -->
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer id="main-footer">
+        <div class="footer-inner">
+            <div class="footer-left">
+                <span class="footer-logo">[ XSPACE ]</span>
+            </div>
+            <div class="footer-center">
+                <a href="https://beian.miit.gov.cn" target="_blank" rel="noopener noreferrer" class="footer-icp">鄂ICP备2026023507号-1</a>
+            </div>
+            <div class="footer-right">
+                <span class="footer-made">Made with curiosity</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll Progress -->
+    <div class="scroll-progress">
+        <div class="scroll-progress-bar"></div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+[
+  {
+    "id": "20260420-关于构建个人网站的思考",
+    "type": "essay",
+    "title": "关于构建个人网站的思考",
+    "date": "2026-04-20",
+    "category": "tech",
+    "tags": [
+      "前端",
+      "设计",
+      "个人成长"
+    ],
+    "excerpt": "在这个信息过载的时代，拥有一个属于自己的数字空间变得越来越重要。这不仅是一个展示自我的窗口，更是一个整理思绪、记录成长的容器。",
+    "content": "<h2>为什么需要个人网站</h2>\n\n<p>社交媒体时代，我们习惯于在各种平台上发布内容。但这些平台终究不属于我们自己——算法决定谁能看到我们的内容，平台规则随时可能改变，甚至账号也可能在一夜之间消失。</p>\n\n<p>一个<strong>完全由自己掌控</strong>的网站则不同：</p>\n\n<ul>\n<li>你可以自由决定它的样子</li><li>你的内容不会被算法过滤</li><li>它不会因为某个公司的决策而消失</li><li>它是你数字身份最真实的体现</li>\n</ul>\n<h2>设计哲学</h2>\n\n<p>我的设计灵感来源于那些充满<strong>实验精神</strong>的网页作品：</p>\n\n<ol>\n<li>1. <strong>大胆的排版</strong> — 让文字本身成为视觉元素</li><li>2. <strong>强烈的色彩对比</strong> — 深色背景配合亮色点缀，营造沉浸感</li><li>3. <strong>几何元素的穿插</strong> — 圆形、方形、线条构成视觉节奏</li><li>4. <strong>代码与设计的融合</strong> — 作为开发者，代码是我表达的一部分</li>\n</ol>\n<h2>技术选择</h2>\n\n<p>这个网站完全使用<strong>原生技术</strong>构建：</p>\n\n<ul>\n<li>HTML5 语义化标签</li><li>CSS3 自定义属性、Grid、Flexbox</li><li>Vanilla JavaScript（无框架依赖）</li><li>Canvas API 粒子动画</li><li>Markdown + Python 构建脚本</li>\n</ul>\n没有使用 React、Vue 或任何 UI 框架。有时候，<strong>最简单的工具反而能带来最纯粹的表达</strong>。\n\n<h2>持续生长</h2>\n\n<p>这个网站不会是一成不变的。随着我的学习深入，它会不断进化。新的交互效果、新的排版尝试、新的内容板块……</p>\n\n<p>它是我的一面镜子，映照着我的成长轨迹。</p>\n\n<p>&gt; \"The web is still a young medium. We have so much left to explore.\"</p>",
+    "source": "content\\thoughts\\about-building-personal-site.md"
+  },
+  {
+    "id": "20260415-深色模式设计的美学探索",
+    "type": "essay",
+    "title": "深色模式设计的美学探索",
+    "date": "2026-04-15",
+    "category": "design",
+    "tags": [
+      "UI设计",
+      "色彩理论"
+    ],
+    "excerpt": "深色模式不仅仅是颜色的反转，它涉及到对比度、层级、色彩心理学的深层考量。一个好的深色主题应该在保护视力的同时，营造出沉浸式的阅读体验。",
+    "content": "<h2>深色 ≠ 黑色</h2>\n\n很多人误以为深色模式就是把背景设为纯黑 <code>#000000</code>。这是一个常见的误区。\n\n<p>真正优秀的深色主题往往使用<strong>深蓝灰</strong>或<strong>深紫灰</strong>作为底色，比如：</p>\n\n<ul>\n<li>{{PH1}} — 带一点蓝调的近黑色</li><li>{{PH2}} — 微妙的紫色调</li><li>{{PH3}} — 更明亮的卡片背景</li>\n</ul>\n纯黑色会造成过高的对比度，长时间阅读容易造成视觉疲劳。\n\n<h2>色彩层级</h2>\n\n<p>深色模式下，色彩的感知会发生变化。同样的颜色在深色背景上会显得<strong>更饱和、更亮</strong>。</p>\n\n<p>因此需要：</p>\n\n<ol>\n<li>1. 降低主色调的饱和度</li><li>2. 使用更柔和的辅助色</li><li>3. 确保足够的对比度（WCAG 建议至少 4.5:1）</li>\n</ol>\n<h2>我的配色方案</h2>\n\n<p>这个网站使用了以下配色：</p>\n\n| 用途 | 颜色 | 说明 |\n|------|------|------|\n| 主背景 | <code>#0a0a0f</code> | 深蓝黑，柔和不刺眼 |\n| 卡片背景 | <code>#13131f</code> | 微妙的层级区分 |\n| 主强调色 | <code>#ff3864</code> | 亮红色，活力与力量 |\n| 次强调色 | <code>#00d4aa</code> | 青色，科技与清新 |\n| 第三强调色 | <code>#7b61ff</code> | 紫色，神秘与创造 |\n\n<h2>字体选择</h2>\n\n<p>深色模式下，字体的可读性尤为关键。</p>\n\n<ul>\n<li><strong>标题</strong>：Space Grotesk — 几何感强，现代且有力</li><li><strong>正文</strong>：Noto Serif SC — 衬线体在屏幕上提供了更好的阅读体验，尤其是长文本</li>\n</ul>\n<h2>动效的克制</h2>\n\n<p>深色背景上的动效需要更加克制。过多的闪烁和快速移动在深色环境下会显得刺眼。</p>\n\n<p>我的原则是：</p>\n\n<ul>\n<li>动画速度放慢 20%</li><li>减少高对比度的闪烁</li><li>使用柔和的渐变和透明度变化</li>\n</ul>\n<hr>\n深色模式的设计是一场关于<strong>克制与表达</strong>的平衡。太暗会压抑，太亮会失去沉浸感。找到那个恰到好处的点，是一门需要不断修炼的技艺。",
+    "source": "content\\thoughts\\dark-mode-design.md"
+  }
+]

@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.claude/
+pre.mp4
+node_modules/
+.DS_Store
+Thumbs.db
